@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<style>
+		*{
+			margin: 0 auto;
+		}
+		h1{
+			text-align: center;
+			margin: 10px;
+		}
+		.img img{
+			width: 100%;
+		}
+		@media all and (min-width: 769px){
+			.block_img{
+				display: flex;
+				justify-content: space-around;
+				flex-wrap: wrap;
+			}
+			.img {
+				width: 48%;
+				padding-top: 10px;
+			}
+		}
+		@media all and (min-width: 1024px){
+			body{
+				width: 1024px;
+			}
+		}
+		@media all and (min-width: 1370px){
+			body{
+				width: 1280px;
+			}
+			.img {
+				width: 24%;
+			}
+		}
 
 	</style>
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Eval Layout</title>
-		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<h1 class="txtcenter">Evaluation  Layout</h1>
+		<!--<h1 class="txtcenter">Evaluation  Layout</h1>
 		<h2 class="desktopG txtcenter">Vue Desktop > 1370px</h2>
 		<h2 class="desktop txtcenter">Vue Desktop</h2>
 		<h2 class="tablette txtcenter">Vue Tablette à 768px à 970px</h2>
-		<h2 class="telephone txtcenter">Vue Téléphone à 320px</h2>
-
-
-
+		<h2 class="telephone txtcenter">Vue Téléphone à 320px</h2>-->
+		<h1>Evaluation desktop</h1>
+		<div class="block_img">
+			<div class="img"><img alt="mer" src="img/mer.jpg" id="img_mer"/></div>
+			<div class="img"><img alt="lac" src="img/lac.jpg" id="img_lac"/></div>
+			<div class="img"><img alt="montagne" src="img/montagne.jpg" id="img_montagne"/></div>
+			<div class="img"><img alt="foret" src="img/foret.jpg" id="img_foret"/></div>
+		</div>
 	</body>
 </html>
